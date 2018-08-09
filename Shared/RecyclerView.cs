@@ -3,7 +3,6 @@
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
-    using Plugin;
 
     public class RecyclerView<TItem> : ScrollView
     {
@@ -140,7 +139,7 @@
         List<State> CalculateInitialStates(float scrollY)
         {
             var remainder = scrollY % itemHeight > 0.001 ? 1 : 0;
-            var loadItems = (int) (scrollY / itemHeight) + remainder;
+            var loadItems = (int)(scrollY / itemHeight) + remainder;
 
             var result = new List<State>();
             for (var stepIndex = 0; stepIndex < loadItems; stepIndex++)
@@ -169,7 +168,7 @@
             var baseHight = scrollDirection == ScrollDirection.Forward ? ActualHeight : 0;
 
             var partialyVisible = (scrollY + baseHight) % itemHeight > 0.001 ? 1 : 0;
-            var completelyVisible = (int) ((scrollY + baseHight) / itemHeight);
+            var completelyVisible = (int)((scrollY + baseHight) / itemHeight);
             var nextVisibleDataIndex = completelyVisible + partialyVisible - 1;
 
             if (nextVisibleDataIndex < 0 || nextVisibleDataIndex >= adapter.GetDataSourceCount()) return 0;

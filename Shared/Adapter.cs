@@ -1,4 +1,4 @@
-﻿namespace Zebble.Plugin
+﻿namespace Zebble
 {
     using System.Collections.Generic;
     using System.Linq;
