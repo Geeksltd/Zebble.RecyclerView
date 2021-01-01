@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.RecyclerView/master/Shared/NuGet/Icon.png "Zebble.RecyclerView"
+﻿[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.RecyclerView/master/icon.png "Zebble.RecyclerView"
 
 
 ## Zebble.RecyclerView
